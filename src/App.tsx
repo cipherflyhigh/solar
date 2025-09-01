@@ -350,7 +350,6 @@ function App() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full">Manutenção Completa</span>
               <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Oliveira/MG</span>
             </div>
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => openWhatsApp('Olá! Gostaria de solicitar um orçamento para aquecedores de piscina e produtos para área de lazer.')}
