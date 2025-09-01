@@ -336,13 +336,20 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Transformamos o <br />
-              <span className="text-orange-500">lazer</span> da sua{' '}
-              <span className="text-blue-500">família</span>
+              Aquecedores Solares para <br />
+              <span className="text-orange-500">Piscinas</span> em{' '}
+              <span className="text-blue-500">Oliveira/MG</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Especialistas em aquecedores de piscinas de alta eficiência, piscinas 
-              personalizadas e uma completa linha de produtos para seu espaço de lazer.
+            <h2 className="text-xl text-gray-600 leading-relaxed font-normal">
+              Especialistas em aquecimento solar para piscinas, trocadores de calor, 
+              piscinas personalizadas e manutenção completa. Economia de até 80% na conta de energia!
+            </h2>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full">Aquecimento Solar</span>
+              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Piscinas Personalizadas</span>
+              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full">Manutenção Completa</span>
+              <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Oliveira/MG</span>
+            </div>
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
@@ -402,10 +409,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Sobre a Solar Aquecedores e Piscinas
+              Especialistas em Aquecimento Solar para Piscinas em Oliveira/MG
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Mais do que uma empresa, somos parceiros na criação do seu espaço de lazer perfeito
+            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Mais de 10 anos transformando piscinas com tecnologia solar sustentável e econômica
+            </h3>
             </p>
           </div>
 
@@ -455,9 +463,10 @@ function App() {
       <section id="produtos" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossos Produtos</h2>
-            <p className="text-xl text-gray-600">
-              Oferecemos uma linha completa de produtos para tornar seu espaço de lazer perfeito
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Produtos para Piscinas e Aquecimento Solar</h2>
+            <h3 className="text-xl text-gray-600">
+              Linha completa de aquecedores solares, piscinas, acessórios e produtos para manutenção
+            </h3>
             </p>
           </div>
 
@@ -504,9 +513,10 @@ function App() {
       <section id="servicos" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossos Serviços</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Oferecemos soluções completas para transformar seu espaço em um verdadeiro paraíso aquático
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Serviços de Piscinas e Aquecimento Solar em Oliveira/MG</h2>
+            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Instalação, manutenção e construção de piscinas com aquecimento solar sustentável
+            </h3>
             </p>
           </div>
 
@@ -548,9 +558,10 @@ function App() {
       <section id="avaliacoes" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Avaliações dos Nossos Clientes</h2>
-            <p className="text-xl text-gray-600">
-              Veja o que nossos clientes falam sobre nossos produtos e serviços
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Avaliações - Aquecedores Solares e Piscinas Oliveira/MG</h2>
+            <h3 className="text-xl text-gray-600">
+              Depoimentos reais de clientes satisfeitos com nossos aquecedores solares e piscinas
+            </h3>
             </p>
           </div>
 
