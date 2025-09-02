@@ -413,7 +413,6 @@ function App() {
             <h3 className="text-xl text-gray-600 max-w-3xl mx-auto">
               Mais de 10 anos transformando piscinas com tecnologia solar sustentável e econômica
             </h3>
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -466,7 +465,6 @@ function App() {
             <h3 className="text-xl text-gray-600">
               Linha completa de aquecedores solares, piscinas, acessórios e produtos para manutenção
             </h3>
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -516,7 +514,6 @@ function App() {
             <h3 className="text-xl text-gray-600 max-w-3xl mx-auto">
               Instalação, manutenção e construção de piscinas com aquecimento solar sustentável
             </h3>
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -561,7 +558,6 @@ function App() {
             <h3 className="text-xl text-gray-600">
               Depoimentos reais de clientes satisfeitos com nossos aquecedores solares e piscinas
             </h3>
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
