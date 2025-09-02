@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import { Thermometer, Leaf, DollarSign, Target, Award, Users, CheckCircle as CircleCheck, Heart, Waves, Droplets, Wrench, Bath, Home, Zap, Settings, ShoppingBag, Palette, Star, Menu, X } from 'lucide-react';
-import SEOMetaTags from './components/SEOMetaTags';
-import BreadcrumbSchema from './components/BreadcrumbSchema';
-import ProductSchema from './components/ProductSchema';
-import FAQSchema, { defaultFAQs } from './components/FAQSchema';
-import { seoPages } from './data/seoPages';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -269,19 +264,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* SEO Components */}
-      <SEOMetaTags page="home" />
-      <BreadcrumbSchema items={seoPages.home.breadcrumbs} />
-      <ProductSchema 
-        name="Aquecedores Solares para Piscinas"
-        description="Sistemas de aquecimento solar com trocadores de calor e placas solares para piscinas. Economia de até 80% na energia elétrica."
-        image="https://i.imgur.com/oIR52mn.png"
-        category="Aquecimento de Piscinas"
-        rating={4.9}
-        reviewCount={150}
-      />
-      <FAQSchema faqs={defaultFAQs} />
-      
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -353,85 +335,35 @@ function App() {
       <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-sm text-orange-600 font-medium">
-                <Star className="w-4 h-4 fill-current" />
-                <span>Nota 4.9/5 • 150+ clientes satisfeitos</span>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                <span className="text-orange-500">Aquecedores Solares</span> para <br />
-                Piscinas em <span className="text-blue-500">Oliveira/MG</span>
-              </h1>
-            </div>
-            <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-normal">
-              🔥 <strong>Economia de até 80%</strong> na conta de energia! Especialistas em aquecimento solar, 
-              trocadores de calor, piscinas personalizadas e manutenção completa. 
-              <span className="text-orange-600 font-semibold">Orçamento grátis!</span>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              Aquecedores Solares para <br />
+              <span className="text-orange-500">Piscinas</span> em{' '}
+              <span className="text-blue-500">Oliveira/MG</span>
             </h1>
+            <h2 className="text-xl text-gray-600 leading-relaxed font-normal">
+              Especialistas em aquecimento solar para piscinas, trocadores de calor, 
+              piscinas personalizadas e manutenção completa. Economia de até 80% na conta de energia!
             </h2>
-            
-            {/* Benefícios em destaque */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Thermometer className="w-6 h-6 text-orange-500" />
-                </div>
-                <p className="text-sm font-medium text-gray-900">Aquecimento Solar</p>
-                <p className="text-xs text-gray-600">Sustentável</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <DollarSign className="w-6 h-6 text-green-500" />
-                </div>
-                <p className="text-sm font-medium text-gray-900">Economia 80%</p>
-                <p className="text-xs text-gray-600">Na energia</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Award className="w-6 h-6 text-blue-500" />
-                </div>
-                <p className="text-sm font-medium text-gray-900">Garantia 5 Anos</p>
-                <p className="text-xs text-gray-600">Equipamentos</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Target className="w-6 h-6 text-purple-500" />
-                </div>
-                <p className="text-sm font-medium text-gray-900">Oliveira/MG</p>
-                <p className="text-xs text-gray-600">E região</p>
-              </div>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full">Aquecimento Solar</span>
+              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Piscinas Personalizadas</span>
+              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full">Manutenção Completa</span>
+              <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Oliveira/MG</span>
             </div>
-            
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => openWhatsApp('🏊‍♂️ Olá! Gostaria de solicitar um ORÇAMENTO GRÁTIS para aquecedores solares de piscina em Oliveira/MG. Quero economizar até 80% na energia!')}
-                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg"
+                onClick={() => openWhatsApp('Olá! Gostaria de solicitar um orçamento para aquecedores de piscina e produtos para área de lazer.')}
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors flex items-center justify-center space-x-2"
               >
-                <span>🔥 Orçamento Grátis</span>
+                <span>Solicitar Orçamento</span>
                 <CircleCheck className="w-5 h-5" />
               </button>
               <button 
                 onClick={() => scrollToSection('produtos')}
-                className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all transform hover:scale-105"
+                className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
               >
-                Ver Produtos
+                Nossos Produtos
               </button>
-            </div>
-            
-            {/* Trust indicators */}
-            <div className="flex items-center space-x-6 text-sm text-gray-600">
-              <div className="flex items-center space-x-1">
-                <CircleCheck className="w-4 h-4 text-green-500" />
-                <span>Orçamento Grátis</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <CircleCheck className="w-4 h-4 text-green-500" />
-                <span>Instalação Profissional</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <CircleCheck className="w-4 h-4 text-green-500" />
-                <span>Garantia Total</span>
-              </div>
             </div>
           </div>
 
@@ -475,12 +407,11 @@ function App() {
       <section id="sobre" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🏆 Especialistas em Aquecimento Solar para Piscinas em Oliveira/MG
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Especialistas em Aquecimento Solar para Piscinas em Oliveira/MG
             </h2>
-            <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              <strong>Mais de 10 anos</strong> transformando piscinas com <strong>tecnologia solar sustentável</strong>. 
-              Atendemos Oliveira, Divinópolis, Formiga, Itaúna, Lavras e toda região centro-oeste de MG.
+            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Mais de 10 anos transformando piscinas com tecnologia solar sustentável e econômica
             </h3>
           </div>
 
@@ -530,12 +461,9 @@ function App() {
       <section id="produtos" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🛍️ Produtos para Piscinas e Aquecimento Solar em Oliveira/MG
-            </h2>
-            <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
-              Linha completa: <strong>aquecedores solares</strong>, <strong>trocadores de calor</strong>, 
-              <strong>piscinas personalizadas</strong>, acessórios e produtos para manutenção
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Produtos para Piscinas e Aquecimento Solar</h2>
+            <h3 className="text-xl text-gray-600">
+              Linha completa de aquecedores solares, piscinas, acessórios e produtos para manutenção
             </h3>
           </div>
 
@@ -582,12 +510,9 @@ function App() {
       <section id="servicos" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🔧 Serviços de Piscinas e Aquecimento Solar em Oliveira/MG
-            </h2>
-            <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
-              <strong>Instalação profissional</strong>, <strong>manutenção preventiva</strong> e 
-              <strong>construção de piscinas</strong> com aquecimento solar sustentável
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Serviços de Piscinas e Aquecimento Solar em Oliveira/MG</h2>
+            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Instalação, manutenção e construção de piscinas com aquecimento solar sustentável
             </h3>
           </div>
 
@@ -629,11 +554,9 @@ function App() {
       <section id="avaliacoes" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ⭐ Avaliações - Aquecedores Solares e Piscinas Oliveira/MG
-            </h2>
-            <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
-              <strong>150+ clientes satisfeitos</strong> com nossos aquecedores solares, piscinas e serviços em Oliveira/MG e região
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Avaliações - Aquecedores Solares e Piscinas Oliveira/MG</h2>
+            <h3 className="text-xl text-gray-600">
+              Depoimentos reais de clientes satisfeitos com nossos aquecedores solares e piscinas
             </h3>
           </div>
 
