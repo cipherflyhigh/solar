@@ -367,7 +367,6 @@ function App() {
               🔥 <strong>Economia de até 80%</strong> na conta de energia! Especialistas em aquecimento solar, 
               trocadores de calor, piscinas personalizadas e manutenção completa. 
               <span className="text-orange-600 font-semibold">Orçamento grátis!</span>
-            </h1>
             </h2>
             
             {/* Benefícios em destaque */}
