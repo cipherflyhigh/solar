@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Thermometer, Leaf, DollarSign, Target, Award, Users, CheckCircle as CircleCheck, Heart, Waves, Droplets, Wrench, Bath, Home, Zap, Settings, ShoppingBag, Palette, Star, Menu, X } from 'lucide-react';
+import BlogPage from './components/BlogPage';
 import SEOMetaTags from './components/SEOMetaTags';
 import BreadcrumbSchema from './components/BreadcrumbSchema';
 import ProductSchema from './components/ProductSchema';
@@ -9,6 +10,11 @@ import { seoPages } from './data/seoPages';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showBlog, setShowBlog] = useState(false);
+
+  if (showBlog) {
+    return <BlogPage onBack={() => setShowBlog(false)} />;
+  }
 
   const openWhatsApp = (message: string) => {
     const phoneNumber = '5537991106828';
@@ -24,6 +30,10 @@ function App() {
   };
 
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'blog') {
+      setShowBlog(true);
+      return;
+    }
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
@@ -38,6 +48,7 @@ function App() {
     { id: 'produtos', label: 'Produtos' },
     { id: 'servicos', label: 'Serviços' },
     { id: 'avaliacoes', label: 'Avaliações' },
+    { id: 'blog', label: 'Blog' }
   ];
 
   const features = [
@@ -364,7 +375,7 @@ function App() {
               </h1>
             </div>
             <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-normal">
-              🔥 <strong>Economia de até 80%</strong> na conta de energia! Especialistas em aquecimento solar, 
+              <strong>Economia de até 80%</strong> na conta de energia! Especialistas em aquecimento solar, 
               trocadores de calor, piscinas personalizadas e manutenção completa. 
               <span className="text-orange-600 font-semibold">Orçamento grátis!</span>
             </h2>
@@ -403,10 +414,10 @@ function App() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => openWhatsApp('🏊‍♂️ Olá! Gostaria de solicitar um ORÇAMENTO GRÁTIS para aquecedores solares de piscina em Oliveira/MG. Quero economizar até 80% na energia!')}
+                onClick={() => openWhatsApp('Olá! Gostaria de solicitar um ORÇAMENTO GRÁTIS para aquecedores solares de piscina em Oliveira/MG. Quero economizar até 80% na energia!')}
                 className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg"
               >
-                <span>🔥 Orçamento Grátis</span>
+                <span>Orçamento Grátis</span>
                 <CircleCheck className="w-5 h-5" />
               </button>
               <button 
@@ -475,7 +486,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🏆 Especialistas em Aquecimento Solar para Piscinas em Oliveira/MG
+              Especialistas em Aquecimento Solar para Piscinas em Oliveira/MG
             </h2>
             <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               <strong>Mais de 10 anos</strong> transformando piscinas com <strong>tecnologia solar sustentável</strong>. 
@@ -530,7 +541,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🛍️ Produtos para Piscinas e Aquecimento Solar em Oliveira/MG
+              Produtos para Piscinas e Aquecimento Solar em Oliveira/MG
             </h2>
             <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
               Linha completa: <strong>aquecedores solares</strong>, <strong>trocadores de calor</strong>, 
@@ -582,7 +593,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🔧 Serviços de Piscinas e Aquecimento Solar em Oliveira/MG
+              Serviços de Piscinas e Aquecimento Solar em Oliveira/MG
             </h2>
             <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
               <strong>Instalação profissional</strong>, <strong>manutenção preventiva</strong> e 
@@ -629,7 +640,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ⭐ Avaliações - Aquecedores Solares e Piscinas Oliveira/MG
+              Avaliações - Aquecedores Solares e Piscinas Oliveira/MG
             </h2>
             <h3 className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
               <strong>150+ clientes satisfeitos</strong> com nossos aquecedores solares, piscinas e serviços em Oliveira/MG e região
