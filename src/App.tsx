@@ -21,12 +21,13 @@ function App() {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
-    // Rastrear conversão do Google Ads
+    // Rastrear conversão do Google Ads e abrir WhatsApp
     if (typeof (window as any).gtag_report_conversion === 'function') {
-      (window as any).gtag_report_conversion(whatsappUrl);
-    } else {
-      window.open(whatsappUrl, '_blank');
+      (window as any).gtag_report_conversion();
     }
+    
+    // Abrir WhatsApp sempre
+    window.open(whatsappUrl, '_blank');
   };
 
   const scrollToSection = (sectionId: string) => {
