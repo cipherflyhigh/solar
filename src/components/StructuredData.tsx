@@ -37,7 +37,7 @@ export const productStructuredData = {
         "name": "Solar Aquecedores e Piscinas",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Av. Maracaí, 510",
+          "streetAddress": "Av. Maracanã, 510",
           "addressLocality": "Oliveira",
           "addressRegion": "MG",
           "postalCode": "35540-000",
@@ -86,7 +86,7 @@ export const serviceStructuredData = {
     "name": "Solar Aquecedores e Piscinas",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Av. Maracaí, 510",
+      "streetAddress": "Av. Maracanã, 510",
       "addressLocality": "Oliveira",
       "addressRegion": "MG",
       "postalCode": "35540-000",
