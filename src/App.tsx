@@ -517,7 +517,7 @@ function App() {
               />
               <div className="absolute bottom-4 left-4 bg-white p-3 rounded-lg shadow-lg">
                 <h4 className="font-semibold text-gray-900">Solar Aquecedores e Piscinas</h4>
-                <p className="text-sm text-gray-600">Av. Maracaí, 510 - Centro, Oliveira/MG</p>
+                <p className="text-sm text-gray-600">Av. Maracanã, 510 - Centro, Oliveira/MG</p>
               </div>
             </div>
           </div>
