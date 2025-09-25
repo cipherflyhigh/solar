@@ -296,14 +296,20 @@ function App() {
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20 md:h-24">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-4">
               <img 
-                src="https://i.imgur.com/VJUO0cN.png" 
+                src="https://i.imgur.com/zP8uS14.png" 
                 alt="Solar Aquecedores e Piscinas" 
-                className="h-10 w-auto"
+                className="h-14 w-auto md:h-18 lg:h-20"
               />
+              <div className="hidden sm:block">
+                <h1 className="text-xl md:text-2xl font-bold text-gray-900">
+                  Solar Aquecedores e Piscinas
+                </h1>
+                <p className="text-sm text-gray-600">Oliveira/MG</p>
+              </div>
             </div>
 
             {/* Desktop Navigation */}
@@ -679,10 +685,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">SP</span>
-                </div>
+              <div className="flex items-center space-x-4 mb-4">
+                <img 
+                  src="https://i.imgur.com/zP8uS14.png" 
+                  alt="Solar Aquecedores e Piscinas" 
+                  className="h-12 w-auto"
+                />
                 <div>
                   <h3 className="font-bold text-lg">Solar Aquecedores e Piscinas</h3>
                   <p className="text-gray-300 text-sm">Oliveira/MG</p>
