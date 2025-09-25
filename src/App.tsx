@@ -300,7 +300,7 @@ function App() {
             {/* Logo */}
             <div className="flex items-center space-x-4">
               <img 
-                src="https://i.imgur.com/zP8uS14.png" 
+                src="https://i.imgur.com/TTwMyv1.png" 
                 alt="Solar Aquecedores e Piscinas" 
                 className="h-14 w-auto md:h-18 lg:h-20"
               />
@@ -687,7 +687,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-4 mb-4">
                 <img 
-                  src="https://i.imgur.com/zP8uS14.png" 
+                  src="https://i.imgur.com/TTwMyv1.png" 
                   alt="Solar Aquecedores e Piscinas" 
                   className="h-12 w-auto"
                 />
