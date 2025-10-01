@@ -296,20 +296,14 @@ function App() {
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20 md:h-24">
+          <div className="flex items-center justify-between h-24 md:h-32 lg:h-36">
             {/* Logo */}
             <div className="flex items-center space-x-4">
               <img 
                 src="https://i.imgur.com/TTwMyv1.png" 
                 alt="Solar Aquecedores e Piscinas" 
-                className="h-14 w-auto md:h-18 lg:h-20"
+                className="h-16 w-auto md:h-24 lg:h-28 xl:h-32"
               />
-              <div className="hidden sm:block">
-                <h1 className="text-xl md:text-2xl font-bold text-gray-900">
-                  Solar Aquecedores e Piscinas
-                </h1>
-                <p className="text-sm text-gray-600">Oliveira/MG</p>
-              </div>
             </div>
 
             {/* Desktop Navigation */}
