@@ -296,7 +296,6 @@ function App() {
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-28 md:h-36 lg:h-44 xl:h-48">
           <div className="flex items-center justify-between h-32 md:h-40 lg:h-48 xl:h-56">
             {/* Logo */}
             <div className="flex items-center space-x-4">
@@ -333,7 +332,7 @@ function App() {
               className="md:hidden p-2 rounded-md text-gray-700 hover:text-orange-500"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              Contato
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
@@ -352,8 +351,11 @@ function App() {
                     {item.label}
                   </button>
                 ))}
-                <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-colors text-center mt-4">
-                  <span onClick={() => openWhatsApp('Olá! Gostaria de mais informações sobre os produtos e serviços da Solar Aquecedores e Piscinas.')}>Contato</span>
+                <button 
+                  onClick={() => openWhatsApp('Olá! Gostaria de mais informações sobre os produtos e serviços da Solar Aquecedores e Piscinas.')}
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-colors text-center mt-4"
+                >
+                  Contato
                 </button>
               </div>
             </div>
