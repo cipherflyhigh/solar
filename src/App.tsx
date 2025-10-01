@@ -686,7 +686,7 @@ function App() {
                 <img 
                   src="https://i.imgur.com/TTwMyv1.png" 
                   alt="Solar Aquecedores e Piscinas" 
-                  className="h-20 w-auto"
+                  className="h-16 w-auto"
                 />
                 <div>
                   <h3 className="font-bold text-lg">Solar Aquecedores e Piscinas</h3>
