@@ -703,9 +703,9 @@ function App() {
               <div className="space-y-2 text-gray-300">
                 <p>Av. Maracaí, 510 - Centro</p>
                 <p>Oliveira/MG - CEP: 35540-000</p>
-                <p>Telefone: (37) 3331-1234</p>
-                <p>WhatsApp: (37) 99999-1234</p>
-                <p>contato@solarpiscinas.com.br</p>
+                <p>Telefone: (37) 3331-6828</p>
+                <p>WhatsApp: (37) 99110-6828</p>
+                <p>solaraquecedores@gmail.com</p>
               </div>
             </div>
 
